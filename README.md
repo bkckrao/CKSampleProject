@@ -146,6 +146,92 @@ Reporting.Info("Information", true);
 ```
 ![ReportScreenshot](Installs/docs/ReportScreenshot.png)
 
+## Library Functions
+
+Library functions are the methods built in the framework. These methods can be accessed with object *lib*.
+
+*Following are the list of methods:*
+
+- *getTextByXpath(String sXpath)* - To get the label by passing xPath as String
+
+- *isElementPresent(By by)* - It will return false, if element does not present. Similarly return true, if element present
+
+- *waitForElementBy(By by, String ElementName)* - System wait for the presence of element for Timeout number of seconds with an inerval of 5 seconds and throws error
+
+- *waitfortitleandvalidate(String sTitle)* - System waits for page to load until the page Title appears and validates the Title. If the waiting time reaches Timedout number of seconds, throws error
+
+- *maximizethewindow()* - This method will maximize the browser window handled by driver
+
+- deletecookies() - This method will delete the browser cookies
+
+- focustoframes(String OuterFrame, String InnerFrame) - This method will move into two frames one by one
+
+- focustoframes(String Frame) - This method will move into the frame provided in the parameter
+
+- refreshPage() - This method will Refresh the page
+- doubleClick(WebElement Element) - To double click on an element provided in the parameter as webelement
+
+- hover(String sXPathofElement) - To hover an element by providing xpath of element
+
+- hovernclick(String hoverelement, By clickelement) - To hover on element and clicking on it
+
+- windowhandle() - This method will switch the driver from one browser to other browser
+
+- outofframes() - To move out of all the frames
+
+- getXpathsCount(String sXpath) - This method is used to get the count of multiple elements that matches the xpath
+
+- clickon(String sXpath, String sElementName) - This method is used to click on an element. Here it uses Javascript executor to identify and click on element using xpath
+
+- clickButtonAndUploadFile(String sButtonXpath, String sFilepath) - This method is used to click on browse button and upload a file
+
+- isElementAbsent(By by) - It verifies the absence of element and returns true or false
+
+- verifyAbsence(String sXpath) - This method verifies the absence of element by taking the xpath and writes in the logs
+
+- verifyPresence(String sXpath) - This method verifies the presence of element by taking the xpath and writes in the logs
+
+- setAttibute(String sXpath, String sAttributeName, String sAttributeValue) - This method is to update the attribute value
+
+- deleteAttribute(String sXpath, String sAttributeName) - This method is to delete the attribute value by passing xPath as parameter
+
+- verifyDomComplete() - This method veries dom is complete or not
+
+- alertAccept() - This method is to click OK on the alert
+
+## Util Functions:
+
+*sleepforseconds(int n)* - This method is used to sleep for number of seconds mentioned in parameter
+
+*pressEscape()* - This method is used to click Escape button
+
+*numberoftabs(int tabscount)* - This method used to click tab button number of times mentioned in parameter
+
+*pressKeys(int KeyEvent)* - This method to press the keyboard keys.
+For ex pressKeys(keyEvent.VK_1) , keyEvent.VK_A
+
+*hitenter* - This method will click the Enter button 
+
+*runAutoit(String autoitexepath)* - This method is used to execute the Autoit script
+
+*runAutoit(String autoitexepath, String param1)* - This method is used to execute the Autoit script.
+- @param autoitexepath - Path of compiled Autoitscript file with extension .exe
+- @param param1 - This is the value of parameter that was declared in the Autoit script
+
+*getCurrentDatenTime(String format)* - This method will return the current date and time in the format specified in parameter.
+
+*getTomorrowDatenTime(String format)* - This method will return the tomorrow date and time in the format specified in parameter
+
+*getYesterdayDatenTime(String format)* - This method will return the yesterday date and time in the format specified in parameter
+
+*getformat()* - This method just returns the format predefined in this class
+
+*createFolder(String sPath)* - this method look for the folder and creates if not found in the specified path
+
+*renameFolder(String CurrentName, String NewName)* - This method will rename the file/folder by providing both old and new name parameters. Please note that, If you want to rename the file, it should have extensions as well
+
+*deleteFolder(String Path)* - This method will delete the file/folder specified as parameter. Here we have to pass the complete path of the file or folder.
+
 **Tools Installation by Script:**
 
 - Download the GitHub repository provided to your project
