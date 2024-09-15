@@ -13,6 +13,10 @@
 
 [How to write scripts](#How-to-write-scripts)
 
+[Library Functions](#library-functions)
+
+[Util Functions](#util-functions)
+
 [Tools Installation by Script](#Tools-Installation-by-Script)
 
 [Get start with this framework](/Installs/docs/More_On_ckFramework.md)
